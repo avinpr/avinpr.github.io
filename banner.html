@@ -7,23 +7,23 @@
         <h1>Banner test flomoji 1</h1>
         <script>
                 function loadAndTrackBanner() {
-                    $(document).ready(function() {
-                          var originalHeight = window.innerHeight;
-                          var minHeightDifference = 80;
-                          $('head').append('<meta name="apple-itunes-app" content="app-id=1164573049, affiliate-data=cnn, app-argument=https://itunes.apple.com/us/app/cnn-app-for-ipad/id407824176">');
-                          window.setTimeout(function() {
-                            var currentHeight = window.innerHeight;
-                            var heightDifference = originalHeight - currentHeight;
-                            if(heightDifference >= minHeightDifference) {
-                                //fire GA
-                                alert("Should fire GA as height difference = " + heightDifference);
-                            } else alert("DON'T fire GA as height difference = " + heightDifference);
-                          }, 1000);
-                    });
+                    var originalHeight = window.innerHeight;
+                    var minHeightDifference = 80;
+                    $('head').append('<meta name="apple-itunes-app" content="app-id=1164573049, affiliate-data=cnn, app-argument=https://itunes.apple.com/us/app/cnn-app-for-ipad/id407824176">');
+                    window.setTimeout(function() {
+                        var currentHeight = window.innerHeight;
+                        var heightDifference = originalHeight - currentHeight;
+                        if(heightDifference >= minHeightDifference) {
+                            //fire GA
+                            alert("Should fire GA as height difference = " + heightDifference);
+                        } else alert("DON'T fire GA as height difference = " + heightDifference);
+                    }, 1000);
                 }
-                try {
-                    if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)) loadAndTrackBanner();
-                } catch(e) {}
+                $(document).ready(function() {
+                    try {
+                        if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)) loadAndTrackBanner();
+                    } catch(e) {}
+                });
             </script>
     </body>
 </html>
