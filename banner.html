@@ -6,7 +6,7 @@
     <body>
         <h1>Banner test cnn</h1>
         <script>
-            function() {
+            (function() {
                 function loadAndTrackBanner() {
                     var originalHeight = window.innerHeight;
                     $(window).on('load', function() {
@@ -29,7 +29,7 @@
                     loadAndTrackBanner();
                 } catch(e) {}
                 });
-            }();
+            })();
         </script>
     </body>
 </html>
