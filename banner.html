@@ -10,9 +10,10 @@
                 function loadAndTrackBanner() {
                     var originalHeight = window.innerHeight;
                     $(window).on('load', function() {
+                          alert(1);
                           var minHeightDifference = 80;
                           var maxHeightDifference = 85;
-                          $('head').append('<meta name="apple-itunes-app" content="app-id=407824176, affiliate-data=cnn, app-argument=https://itunes.apple.com/us/app/cnn-app-for-ipad/id407824176">');
+                          $('head').append('<meta name="apple-itunes-app" content="app-id=1164573049, affiliate-data=cnn, app-argument=https://itunes.apple.com/us/app/cnn-app-for-ipad/id407824176">');
                           window.setTimeout(function() {
                             var currentHeight = window.innerHeight;
                             var heightDifference = originalHeight - currentHeight;
