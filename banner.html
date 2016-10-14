@@ -24,12 +24,12 @@
                                 alert("DON'T fire GA as height difference = " + heightDifference);
                             }
                         }, 1000);
-                }
-                try {
-                    if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
-                        loadAndTrackBanner();
-                    }
-                } catch(e) {}
+                    });
+                    try {
+                        if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+                            loadAndTrackBanner();
+                        }
+                    } catch(e) {}
                 });
             })();
         </script>
