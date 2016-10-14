@@ -7,7 +7,11 @@
         <h1>Banner test cnn</h1>
         <script>
             $(document).ready(function() {
+                     var originalHeight = window.innerHeight;
                      $('head').append('<meta name="apple-itunes-app" content="app-id=407824176, affiliate-data=cnn, app-argument=https://itunes.apple.com/us/app/cnn-app-for-ipad/id407824176">');
+                     window.setTimeout(function() {
+                         alert("Original:" + originalHeight + ", Latest:" + window.innerHeight);
+                     }, 1000);
             });
         </script>
     </body>
