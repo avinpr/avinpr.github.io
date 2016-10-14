@@ -6,23 +6,30 @@
     <body>
         <h1>Banner test cnn</h1>
         <script>
-            $(window).on('load', function() {
-                     var originalHeight = window.innerHeight;
-                     var minHeightDifference = 80;
-                     var maxHeightDifference = 85;
-                     $('head').append('<meta name="apple-itunes-app" content="app-id=407824176, affiliate-data=cnn, app-argument=https://itunes.apple.com/us/app/cnn-app-for-ipad/id407824176">');
-                     window.setTimeout(function() {
-                         var currentHeight = window.innerHeight;
-                         var heightDifference = originalHeight - currentHeight;
-                         if(heightDifference >= minHeightDifference && heightDifference <= maxHeightDifference) {
-                             //fire GA
-                             alert("Should fire GA as height difference = " + heightDifference);
-                         } else {
-                             //don't fire GA
-                             alert("DON'T fire GA as height difference = " + heightDifference);
-                         }
-                     }, 1000);
-            });
+            function() {
+                function loadAndTrackBanner() {
+                    var originalHeight = window.innerHeight;
+                    $(window).on('load', function() {
+                        var minHeightDifference = 80;
+                        var maxHeightDifference = 85;
+                        $('head').append('<meta name="apple-itunes-app" content="app-id=407824176, affiliate-data=cnn, app-argument=https://itunes.apple.com/us/app/cnn-app-for-ipad/id407824176">');
+                        window.setTimeout(function() {
+                            var currentHeight = window.innerHeight;
+                            var heightDifference = originalHeight - currentHeight;
+                            if(heightDifference >= minHeightDifference && heightDifference <= maxHeightDifference) {
+                                //fire GA
+                                alert("Should fire GA as height difference = " + heightDifference);
+                            } else {
+                                //don't fire GA
+                                alert("DON'T fire GA as height difference = " + heightDifference);
+                            }
+                        }, 1000);
+                }
+                try {
+                    loadAndTrackBanner();
+                } catch(e) {}
+                });
+            }();
         </script>
     </body>
 </html>
