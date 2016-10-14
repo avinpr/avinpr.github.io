@@ -6,9 +6,9 @@
     <body>
         <h1>Banner test cnn</h1>
         <script>
-            (function() {
                 function loadAndTrackBanner() {
                     var originalHeight = window.innerHeight;
+                    alert(originalHeight);
                     $(document).ready(function() {
                           alert(1);
                           var minHeightDifference = 80;
@@ -28,7 +28,6 @@
                     alert(navigator.userAgent);
                     if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)) loadAndTrackBanner();
                 } catch(e) {}
-             })();
             </script>
     </body>
 </html>
