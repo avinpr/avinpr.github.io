@@ -1,0 +1,163 @@
+/* Global layout: landscape-friendly page sections */
+:root{
+  --page-w: 1200px; /* wide for screens; prints nicely too */
+  /*--page-h: 800px;*/
+  --pad: 28px;
+  --border: 10px;
+  --accent: #3a3a3a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #e8e8e8;
+  font-family: Calibri, Arial, "Segoe UI", sans-serif;
+  color: #222;
+  counter-reset: pagecounter;
+}
+
+/* Each page */
+.page {
+  width: var(--page-w);
+  height: var(--page-h);
+  margin: 20px auto;
+  background: white;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: var(--pad);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  overflow: hidden;
+}
+
+/* Header meta (student + artifact) */
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+/* Content area: image beside story */
+.content {
+  display: grid;
+  grid-template-columns: 48% 52%;
+  gap: 22px;
+  height: 100%;
+  align-items: start;
+  padding: 10px;
+  background: rgba(255,255,255,0.65);
+  border-radius: 10px;
+}
+
+/* Decorative geometric border */
+.bordered {
+  position: relative;
+  border: 6px solid transparent;
+  border-image: repeating-linear-gradient(90deg,
+      #6b3f2d 0 20px, #d1a679 20px 40px, #6b3f2d 40px 60px) 10;
+}
+
+/* Figures and story */
+.art {
+  margin: 0;
+  align-self: center;
+  text-align: center;
+}
+.art img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+  background: #f8f8f8;
+  object-fit: contain;
+}
+
+.story {
+  font-size: 18px;
+  line-height: 1.5;
+  padding-right: 15px;
+}
+
+/* Page numbers */
+.page-number::after {
+  counter-increment: pagecounter;
+  content: counter(pagecounter);
+}
+.page-number {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Cover styling */
+.cover .cover-inner {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  gap: 10px;
+  align-items: end;
+  justify-items: center;
+}
+.cover-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title {
+  margin-top: 550px;
+  margin-bottom: 0;
+  font-family: "Comic Sans MS", "Bradley Hand", "Segoe Print", Arial, sans-serif;
+  font-size: 54px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 0 rgba(255,255,255,.7);
+}
+.subtitle {
+  margin: 6px 0 0;
+  font-family: "Comic Sans MS", "Bradley Hand", "Segoe Print", Arial, sans-serif;
+  font-size: 28px;
+  opacity: 0.95;
+}
+.compiled-by {
+  margin: 2px 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Background color themes (one per page) */
+.theme-cover { background: #f7e7cf; }
+.theme-tan   { background: #f2e4cf; }
+.theme-slate { background: #d9e1ea; }
+.theme-brown { background: #e6d3c4; }
+.theme-sky   { background: #d9eef7; }
+.theme-orange{ background: #fde1c5; }
+.theme-sun   { background: #fff1b8; }
+.theme-sea   { background: #d6efe7; }
+.theme-russet{ background: #e9c9c1; }
+.theme-clay  { background: #efe0cf; }
+.theme-stone { background: #e3e7ea; }
+.theme-cream { background: #f7f3e9; }
+.theme-gold  { background: #f3e0b5; }
+
+/* Print support: landscape pages with page breaks */
+@media print {
+  @page { size: landscape; margin: 10mm; }
+  body { background: none; }
+  .page {
+    box-shadow: none;
+    margin: 0 auto 10mm auto;
+    width: auto; height: auto;
+    min-height: 180mm; /* keep landscape aspect */
+    page-break-after: always;
+  }
+  .cover-image { height: 60%; }
+}
