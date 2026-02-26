@@ -114,7 +114,8 @@ body {
 .cover-image {
   position: absolute;
   inset: 10px;
-  max-width: 100%;
+  width: 80%;
+  height: 450px;
   object-fit: cover;
 }
 .title {
@@ -124,6 +125,7 @@ body {
   font-size: 54px;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 0 rgba(255,255,255,.7);
+  color: yellowgreen;
 }
 .subtitle {
   margin: 6px 0 0;
