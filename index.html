@@ -2,232 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Treasures of the Past — The Hidden Secrets of Native-Americans</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="An educational eBook exploring Native American artifacts and their cultural significance, compiled by Team Lego Legends" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lego Legends — FIRST LEGO League BIOGLOW</title>
+  <meta name="description" content="Team Lego Legends landing page for FIRST LEGO League BIOGLOW season 2026-27." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="site-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FIRST LEGO League • 2026-27 Season</p>
+        <h1>Team <span class="highlight">Lego Legends</span></h1>
+        <p class="hero-text">We build bright robots, explore glowing ecosystems, and share tomorrow’s science with every teammate. This year our mission is <strong>BIOGLOW</strong>: nature, technology, and innovation shining together.</p>
+        <div class="hero-actions">
+          <a href="#bio-glow" class="button button-primary">Explore BioGlow</a>
+          <a href="#team" class="button button-ghost">Meet the team</a>
+        </div>
+        <ul class="hero-stats" aria-label="Team highlights">
+          <li><strong>12</strong><span>Future Edition events</span></li>
+          <li><strong>46</strong><span>Explore exhibitions</span></li>
+          <li><strong>52</strong><span>Regional tournaments</span></li>
+        </ul>
+      </div>
 
-  <!-- Cover Page -->
-  <section class="page cover theme-cover">
-    <div class="cover-inner">
-      <img class="cover-image" src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/cover.jpg" alt="Cover illustration" />
-      <h1 class="title">Treasures of the Past — The Hidden Secrets of Native-Americans</h1>
-    </div>
-    <footer class="page-number" aria-hidden="true"></footer>
-  </section>
-
-  <!-- Page 1 – Quill Basket (Aayush Prasad) -->
-  <section class="page theme-tan">
-    <header class="meta">
-      <div class="who">Student: <strong>Aayush Prasad</strong></div>
-      <div class="artifact">Artifact: <strong>Quill Basket</strong></div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 720 620" preserveAspectRatio="xMidYMid slice" class="glow-scene">
+          <defs>
+            <radialGradient id="bioGlowA" cx="30%" cy="30%" r="50%">
+              <stop offset="0%" stop-color="#7cffc1" stop-opacity="1" />
+              <stop offset="100%" stop-color="#7cffc1" stop-opacity="0" />
+            </radialGradient>
+            <radialGradient id="bioGlowB" cx="70%" cy="40%" r="45%">
+              <stop offset="0%" stop-color="#5fc3ff" stop-opacity=".95" />
+              <stop offset="100%" stop-color="#5fc3ff" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="wave" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1a2e4f" />
+              <stop offset="100%" stop-color="#0d1b2d" />
+            </linearGradient>
+            <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="10" result="coloredBlur" />
+              <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <rect x="0" y="0" width="720" height="620" fill="url(#wave)" rx="36" />
+          <circle cx="180" cy="130" r="100" fill="url(#bioGlowA)" filter="url(#glow)" />
+          <circle cx="520" cy="140" r="90" fill="url(#bioGlowB)" filter="url(#glow)" />
+          <path d="M120 500 Q240 420 360 470 T600 420 L720 520 L720 620 L0 620 Z" fill="#0f1b35" opacity=".68" />
+          <path d="M90 430 C170 380 300 480 430 420 C550 360 620 460 680 420" stroke="#85ffc7" stroke-width="12" fill="none" opacity=".7" stroke-linecap="round" />
+          <path d="M110 340 C200 300 320 360 430 320 C520 290 590 350 680 310" stroke="#6db4ff" stroke-width="10" fill="none" opacity=".5" stroke-linecap="round" />
+          <g fill="#8cffbd" opacity=".95">
+            <circle cx="410" cy="380" r="24" />
+            <circle cx="520" cy="300" r="18" />
+            <circle cx="240" cy="520" r="22" />
+            <circle cx="150" cy="220" r="12" />
+            <circle cx="630" cy="180" r="16" />
+          </g>
+          <g fill="#ffffff" opacity=".8">
+            <circle cx="440" cy="90" r="8" />
+            <circle cx="200" cy="70" r="6" />
+            <circle cx="320" cy="190" r="5" />
+            <circle cx="610" cy="90" r="5" />
+          </g>
+        </svg>
+        <div class="hero-remix">
+          <span class="orb orb-1"></span>
+          <span class="orb orb-2"></span>
+          <span class="orb orb-3"></span>
+        </div>
+      </div>
     </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/quill_baskets.jpg" alt="Quill basket illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>There is a quill basket that looks awesome. It is most likely to have been made by a man about 500–700 years ago, a man most likely hunted a porcupine, then took the quills off. When he got them, his wife weaved it and painted it to make a quill basket with a painting of an eagle.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
 
-  <!-- Page 2 – Arrowhead (Aayush Prasad) -->
-  <section class="page theme-slate">
-    <header class="meta">
-      <div class="who">Student: <strong>Aayush Prasad</strong></div>
-      <div class="artifact">Artifact: <strong>Arrowhead</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/arrowheads.jpg" alt="Arrowhead illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Arrowheads are one of the earliest Native American tools. About 14,000 years ago, Native American tribes made them out of flint and stone. They did it by scraping a rock until it was sharp on all sides. Then they attached it to a stick and used it as an arrow. The sharp part made it easy to hunt prey. The arrow heads are triangle shaped and the spear heads are shaped like christmas trees. Then it was discovered thousands of years later.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
+    <main>
+      <section class="intro section-grid" id="team">
+        <div class="panel">
+          <h2>About Lego Legends</h2>
+          <p>We are student team #71182: builders, coders, and explorers. Lego Legends combines teamwork, creativity, and science to build a robot that glows with performance and purpose. Every season we push our designs forward with practice, problem solving, and a playful spirit.</p>
+          <p class="coaches"><strong>Coaches:</strong> Sivaraj Selvaraj and Avinash Prasad</p>
+        </div>
+        <div class="panel">
+          <h2>Team members</h2>
+          <p>Meet the 2026 BioGlow crew:</p>
+          <ul class="team-list">
+            <li>Aayush Prasad</li>
+            <li>Jiya Vaidya</li>
+            <li>Sathvik Sivaraj</li>
+            <li>Shriya Sonar</li>
+            <li>Sidak Kochar</li>
+            <li>Aaliya Ranjith Kumar</li>
+          </ul>
+        </div>
+      </section>
 
-  <!-- Page 3 – Fur (Jiya Vaidya) -->
-  <section class="page theme-brown">
-    <header class="meta">
-      <div class="who">Student: <strong>Jiya Vaidya</strong></div>
-      <div class="artifact">Artifact: <strong>Fur</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/fur.jpg" alt="Fur clothing illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Fur was very helpful for Native Americans. They used fur for clothing, to wrap up babies and little kids, and for warm winter wear. Most of the time, women and girls would make the clothes while the men and boys caught the animals. They removed the fur by skinning the animals.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
+      <section class="feature-cards" id="bio-glow">
+        <article class="card">
+          <h3>What is BIOGLOW?</h3>
+          <p>BIOGLOW™ takes teams on a journey through the fascinating ecosystems of our planet. At the center are the connections between nature, technology, and innovation.</p>
+        </article>
+        <article class="card">
+          <h3>Why it matters</h3>
+          <p>We explore how organisms glow, communicate, and cooperate — from forest floors to ocean depths. BIOGLOW challenges us to imagine solutions that help people and the planet thrive together.</p>
+        </article>
+        <article class="card">
+          <h3>Season highlights</h3>
+          <p>Official challenge release: <strong>August 4, 2026</strong><br>Materials ship: <strong>August 5, 2026</strong><br>Regional events: <strong>Autumn and Winter 2026</strong></p>
+        </article>
+      </section>
 
-  <!-- Page 4 – Fishing Net (Jiya Vaidya) -->
-  <section class="page theme-sky">
-    <header class="meta">
-      <div class="who">Student: <strong>Jiya Vaidya</strong></div>
-      <div class="artifact">Artifact: <strong>Fishing Net</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/fishing_net.jpg" alt="Fishing net illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Native Americans used plant fibers and animal tissues to make fishing nets. They used quivers to protect the animal tissues, but they used plant fibers more often. They placed a heavy stone somewhere in the net so it would sink into the water. Sometimes children helped make the nets and were rewarded for their work.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
+      <section class="triad section-grid">
+        <article class="triad-card">
+          <h3>Nature</h3>
+          <p>Study glowing ecosystems and discover how living systems share energy, signals, and balance.</p>
+        </article>
+        <article class="triad-card">
+          <h3>Technology</h3>
+          <p>Build a robot that can navigate missions, analyze data, and bring smart engineering to life.</p>
+        </article>
+        <article class="triad-card">
+          <h3>Innovation</h3>
+          <p>Create a research project that connects community, science, and a brighter future.</p>
+        </article>
+      </section>
 
-  <!-- Page 5 – The Turtle Rattle (Sathvik Sivaraj) -->
-  <section class="page theme-orange">
-    <header class="meta">
-      <div class="who">Student: <strong>Sathvik Sivaraj</strong></div>
-      <div class="artifact">Artifact: <strong>The Turtle Rattle</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/turtle_rattle.jpg" alt="Turtle rattle illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>The turtle rattle is an interesting item that many people wonder about. How is it made? Why is it important? In this story, you will learn about the turtle rattle.</p>
-        <p>The turtle rattle is an artifact mostly made by Native American culture. It is used during festivals, like Thanksgiving, and played like jingle bells at Christmas. They are used in cultural songs.</p>
-        <p>Drums are also played at festivals. The turtle rattle is basically like a maraca but made from a full turtle shell. Inside the rattle, they put seeds and rocks. To play it, you simply shake it like a maraca.</p>
-        <p>There are even baby toys that use beads to rattle. So next time you see a turtle, think back to the Native Americans.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
+      <section class="section-timeline">
+        <div class="timeline-header">
+          <h2>Season Timeline</h2>
+          <p>Every step is a chance to learn, test, and glow brighter.</p>
+        </div>
+        <ol class="timeline-list">
+          <li>
+            <span class="timeline-step">May 2026</span>
+            <h4>Registration opens</h4>
+            <p>Teams begin signing up for the 2026-27 BIOGLOW season and start dreaming about their robot design and research challenge.</p>
+          </li>
+          <li>
+            <span class="timeline-step">August 4, 2026</span>
+            <h4>Challenge release</h4>
+            <p>The BIOGLOW challenge is released, and teams can begin building, programming, and testing mission strategies.</p>
+          </li>
+          <li>
+            <span class="timeline-step">August 5, 2026</span>
+            <h4>Materials ship</h4>
+            <p>Official materials arrive so teams can start building with new minds, new models, and new mission goals.</p>
+          </li>
+          <li>
+            <span class="timeline-step">Autumn 2026</span>
+            <h4>Regional events begin</h4>
+            <p>Teams will compete, showcase Explore projects, and learn together at tournaments during autumn and winter.</p>
+          </li>
+        </ol>
+      </section>
 
-  <!-- Page 6 – The Symbols (Sathvik Sivaraj) -->
-  <section class="page theme-sun">
-    <header class="meta">
-      <div class="who">Student: <strong>Sathvik Sivaraj</strong></div>
-      <div class="artifact">Artifact: <strong>The Symbols</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/symbols.jpg" alt="Symbols illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>The Native American symbols are a visual language built with ideas of courage and nature. Some of these symbols include eagles, bears, and camps. These symbols were used for storytelling, communicating, and more.</p>
-        <p>Something most people don’t know is that instead of writing left to right, these symbols were sometimes written in a spiral that starts at the edge and ends in the middle. We do not know if there was a certain age when someone had to learn this writing style, but many learned from elders through storytelling, observing adults, and practicing.</p>
-        <p>One of the most important symbols was the eagle, which meant curiosity and strength. So if you think reading emojis is hard, think about what these people had to learn!</p>
-        <p>The End</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
+      <section class="numbers-panel">
+        <div class="numbers-card">
+          <h4>12</h4>
+          <p>Future Edition 8+ events</p>
+        </div>
+        <div class="numbers-card">
+          <h4>46</h4>
+          <p>Explore exhibitions</p>
+        </div>
+        <div class="numbers-card">
+          <h4>52</h4>
+          <p>Challenge regional tournaments</p>
+        </div>
+      </section>
+    </main>
 
-  <!-- Page 7 – The Shell Necklace (Shriya Sonar) -->
-  <section class="page theme-sea">
-    <header class="meta">
-      <div class="who">Student: <strong>Shriya Sonar</strong></div>
-      <div class="artifact">Artifact: <strong>The Shell Necklace</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/shell_necklace.jpg" alt="Shell necklace illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Native Americans used fish bones and shells to make necklaces. They wore them on special occasions. If you were a good hunter, you might be gifted a shell necklace. These necklaces were also traded with other sea and land people for tools or for ochre.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
-
-  <!-- Page 8 – The Drums (Shriya Sonar) -->
-  <section class="page theme-russet">
-    <header class="meta">
-      <div class="who">Student: <strong>Shriya Sonar</strong></div>
-      <div class="artifact">Artifact: <strong>The Drums</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/drums.jpg" alt="Drums illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>In addition to providing musical accompaniment, drums were used as a form of long-distance communication. A sort of "Morse code" system was used, which was different for every tribe. Since the signals produced were kept secret within a particular tribe, drumming can be seen as a very secure form of communication.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
-
-  <!-- Page 9 – The Pottery (Sidak Kochar) -->
-  <section class="page theme-clay">
-    <header class="meta">
-      <div class="who">Student: <strong>Sidak Kochar</strong></div>
-      <div class="artifact">Artifact: <strong>The Pottery</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/pottery.jpg" alt="Pottery illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Native American pottery is considered a significant art form and a vital part of the cultural heritage of Native American people. The history of Native American pottery dates back approximately 2,500 years, with its origins in the Southwestern region of the United States.</p>
-        <p>In fact, Native American pottery history spans at least 7,500 years, with early examples appearing around 3000 BC in what is now Georgia. Originally a necessity for cooking and storage, pottery traditions developed independently across North America, with distinct regional styles and techniques, such as the hand-coiling method still used today.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
-
-  <!-- Page 10 – The Arrowhead (Sidak Kochar) -->
-  <section class="page theme-stone">
-    <header class="meta">
-      <div class="who">Student: <strong>Sidak Kochar</strong></div>
-      <div class="artifact">Artifact: <strong>The Arrowhead</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/arrowheads.jpg" alt="Arrowhead illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Different tribes and cultures had their unique styles of arrowheads, and the shape of an arrowhead was often specific to its intended use. For example, a broadhead quartz arrowhead had a wider blade and was used for big game hunting, while a narrow point was used for birds and small game.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
-
-  <!-- Page 11 – Clothing (Aaliya Ranjith Kumar) -->
-  <section class="page theme-cream">
-    <header class="meta">
-      <div class="who">Student: <strong>Aaliya Ranjith Kumar</strong></div>
-      <div class="artifact">Artifact: <strong>Clothing</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/clothing.jpg" alt="Traditional clothing illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Native Americans used clothes not only for protection from the weather but also to show their culture and identity. They made their clothing from animal hides, such as deer or buffalo, and decorated them with beads, feathers, and shells. Each tribe had its own style, which could show where a person came from or their role in the community. These clothes were often worn during ceremonies and dances, with special designs and colors that had meanings or told stories. Their clothing was both practical and a beautiful expression of their traditions and way of life.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
-
-  <!-- Page 12 – Baskets (Aaliya Ranjith Kumar) -->
-  <section class="page theme-gold">
-    <header class="meta">
-      <div class="who">Student: <strong>Aaliya Ranjith Kumar</strong></div>
-      <div class="artifact">Artifact: <strong>Baskets</strong></div>
-    </header>
-    <div class="content bordered">
-      <figure class="art">
-        <img src="https://lego-legends-images-bucket.s3.us-east-2.amazonaws.com/images/baskets.jpg" alt="Woven baskets illustration" loading="lazy" />
-      </figure>
-      <article class="story">
-        <p>Native Americans used baskets for many important purposes in their daily lives. They made baskets from natural materials like reeds, grasses, and bark to collect, carry, and store food such as berries, nuts, and grains. Some baskets were woven so tightly that they could even hold water for cooking. The designs on the baskets often had special meanings, showing stories of nature, or tribal symbols. Besides being useful, baskets were also used in trade, given as gifts, and held deep spiritual meaning, connecting the people to nature and their traditions.</p>
-      </article>
-    </div>
-    <footer class="page-number"></footer>
-  </section>
-
+    <footer class="site-footer">
+      <div>
+        <h2>Join the glow</h2>
+        <p>Follow Lego Legends as we design our BioGlow robot, research our ecosystem idea, and share progress with our family, school, and community.</p>
+      </div>
+      <a href="https://www.first-lego-league.org/en/2026-27-season/bioglow" class="button button-primary">Visit official BioGlow page</a>
+    </footer>
+  </div>
 </body>
 </html>
