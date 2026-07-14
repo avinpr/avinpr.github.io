@@ -138,6 +138,54 @@ body::before {
   background: rgba(255, 255, 255, 0.05);
 }
 
+.summer-homework {
+  margin: 28px 0 0;
+  padding: 24px 24px 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.summer-homework-header h2 {
+  margin: 4px 0 14px;
+  font-size: 1.25rem;
+  color: #f7ffff;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.summer-homework table {
+  width: 100%;
+  min-width: 460px;
+  border-collapse: collapse;
+}
+
+.summer-homework th,
+.summer-homework td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.summer-homework th {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.summer-homework td {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.summer-homework tbody tr:last-child th,
+.summer-homework tbody tr:last-child td {
+  border-bottom: 0;
+}
+
 .hero-stats {
   list-style: none;
   margin: 32px 0 0;
